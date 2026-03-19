@@ -485,19 +485,15 @@
 
         .project-link {
             font-size: 0.7rem;
-            color: #000;
-            background: var(--accent);
+            color: var(--accent);
             text-decoration: none;
             display: inline-flex;
             align-items: center;
             gap: 0.3rem;
-            padding: 6px 12px;
-            border-radius: 2px;
-            font-weight: 700;
-            transition: all .2s;
-            margin-top: 0.5rem;
+            border-bottom: 1px solid transparent;
+            transition: border-color .2s;
         }
-        .project-link:hover { opacity: 0.9; transform: translateY(-1px); }
+        .project-link:hover { border-color: var(--accent); }
 
         /* === SKILLS === */
         .skills-matrix {
@@ -1078,7 +1074,30 @@
                         <p>My recent work focuses on the intersection of geospatial data and AI, including CNN-based satellite image analysis for agricultural monitoring and thermal super-resolution for environmental sensing. I care a lot about the engineering underneath the interface: latency, maintainability, and the architecture that holds it together.</p>
                         <p>Outside of projects, I'm continuously learning — whether that's a new paper on vision transformers, a systems design concept, or a new framework worth understanding.</p>
 
-
+                        <div style="margin-top:1.5rem">
+                            <div class="section-label" style="margin-bottom:0.75rem">Focus Areas</div>
+                            <div class="terminal" style="max-width: 500px">
+                                <div class="terminal-bar">
+                                    <div class="tb-dots">
+                                        <div class="tb-dot" style="background:#ff5f56"></div>
+                                        <div class="tb-dot" style="background:#ffbd2e"></div>
+                                        <div class="tb-dot" style="background:#27c93f"></div>
+                                    </div>
+                                    <span class="tb-title">focus.sh</span>
+                                </div>
+                                <div class="terminal-body" style="padding:0.8rem 1.2rem">
+                                    <div style="color:var(--green); font-size:0.72rem; margin-bottom:0.4rem">$ cat ./focus-areas.txt</div>
+                                    <div style="color:var(--text-muted); font-size:0.72rem; line-height:1.9">
+                                        → Frontend: React, JavaScript, Tailwind CSS<br>
+                                        → Backend: Python, FastAPI<br>
+                                        → ML: TensorFlow, OpenCV, CNNs<br>
+                                        → Domains: GeoSpatial, Data Science<br>
+                                        → Tools: Git, Jupyter, VS Code<br>
+                                        <span style="color:var(--text-dim)">→ Always learning...</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Profile card -->
